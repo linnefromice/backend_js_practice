@@ -1,7 +1,7 @@
-import { Sample } from './sample';
+import { FizzBuzz } from './fizzbuzz';
 
 const main = () => {
-  console.log(new Sample().say());
+  console.log(new FizzBuzz().execute(3));
 }
 
 main();
