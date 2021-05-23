@@ -13,7 +13,10 @@ describe('FizzBuzz', () => {
   });
   test('3を渡すと文字列Fizzを返す', () => {
     expect("Fizz").toEqual(fizzbuzz.convert(3));
-  });  
+  });
+  test('5を渡すと文字列Buzzを返す', () => {
+    expect("Buzz").toEqual(fizzbuzz.convert(5));
+  });
 });
 
 
