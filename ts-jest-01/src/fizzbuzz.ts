@@ -1,5 +1,5 @@
 export class FizzBuzz {
   public execute(i: number): String {
-    return "Fizz";
+    return i % 5 === 0 ? "Buzz" : "Fizz";
   }
 }
