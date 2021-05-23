@@ -1,10 +1,12 @@
 import { FizzBuzz } from "../fizzbuzz"
 
 describe("FizzBuzzは", () => {
+	const fizzbuzz = new FizzBuzz()
+
   test('3の倍数を受け取るとFizzを返す', () => {
-    expect(new FizzBuzz().execute(3)).toEqual("Fizz");
+    expect(fizzbuzz.execute(3)).toEqual("Fizz");
   });
   test('5の倍数を受け取るとBuzzを返す', () => {
-    expect(new FizzBuzz().execute(5)).toEqual("Buzz");
+    expect(fizzbuzz.execute(5)).toEqual("Buzz");
   });
 });
