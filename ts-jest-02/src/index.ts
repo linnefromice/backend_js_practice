@@ -1,7 +1,5 @@
-import { Sample } from './sample';
-
 const main = () => {
-  console.log(new Sample().say());
+  console.log("TDD practice");
 }
 
 main();
