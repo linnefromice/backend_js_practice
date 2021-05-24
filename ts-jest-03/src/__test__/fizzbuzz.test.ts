@@ -26,6 +26,9 @@ describe('FizzBuzz', () => {
       test('同値類の中の最小の3と5の公倍数15を渡すと文字列"FizzBuzz"を返す', () => {
         expect("FizzBuzz").toEqual(fizzbuzz.convert(15));
       });
+      test('下限の境界値の1つ外側の値0は3の倍数でも5の倍数でもあるので文字列"FizzBuzz"を返す', () => {
+        expect("FizzBuzz").toEqual(fizzbuzz.convert(0));
+      });
     });
     describe('その他の数はそのまま文字列に変換する', () => {
       test('1を渡すと文字列1を返す', () => {
@@ -33,6 +36,9 @@ describe('FizzBuzz', () => {
       });
       test('2を渡すと文字列2を返す', () => {
         expect("2").toEqual(fizzbuzz.convert(2));
+      });
+      test('上限の境界値の1つ外側の101を渡すと文字列101を返す', () => {
+        expect("101").toEqual(fizzbuzz.convert(101));
       });
     });
   });
